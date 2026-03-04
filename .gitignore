@@ -10,3 +10,6 @@ venv/
 # OS / editor
 .DS_Store
 .vscode/
+
+# Artifacts
+artifacts/
