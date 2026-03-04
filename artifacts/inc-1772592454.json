@@ -1,0 +1,59 @@
+{
+  "id": "inc-1772592454",
+  "started_at": 1772592454.6800299,
+  "timeline": [
+    {
+      "tick": 48,
+      "service": "user-service",
+      "rca": "Anomaly detected.\nSuspected service: user-service\nMetrics: cpu=0.27, mem=0.31, latency_ms=139.8, error_rate=0.01\nLog signals: none\nTrace errors: none\nRoot-cause hypothesis: Uncertain anomaly.",
+      "actions": [
+        {
+          "ok": true,
+          "tool": "create_ticket",
+          "severity": "medium",
+          "summary": "Uncertain anomaly in user-service",
+          "message": "Ticket created: severity=medium, summary=Uncertain anomaly in user-service",
+          "ts": 1772592454.681702
+        }
+      ],
+      "metrics_snapshot": [
+        {
+          "service": "frontend",
+          "cpu": 0.22165730034738754,
+          "memory": 0.2873764782316979,
+          "latency_ms": 114.39433316380084,
+          "error_rate": 0.0090239677624265,
+          "replicas": 2,
+          "fault": null
+        },
+        {
+          "service": "user-service",
+          "cpu": 0.27204558353693076,
+          "memory": 0.3111987996880994,
+          "latency_ms": 139.78785782919473,
+          "error_rate": 0.01249220248382894,
+          "replicas": 1,
+          "fault": null
+        },
+        {
+          "service": "payment-service",
+          "cpu": 0.28614418007695097,
+          "memory": 0.2951734642149783,
+          "latency_ms": 129.2161983836913,
+          "error_rate": 0.014483779024272654,
+          "replicas": 1,
+          "fault": null
+        },
+        {
+          "service": "db",
+          "cpu": 0.27554509419641293,
+          "memory": 0.3060758756530074,
+          "latency_ms": 137.5697660658041,
+          "error_rate": 0.014972056091646632,
+          "replicas": 1,
+          "fault": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "tick": 51,
+  "note": "suppressed",
+  "metrics": [
+    {
+      "service": "frontend",
+      "cpu": 0.2378336409332758,
+      "memory": 0.3402791292743754,
+      "latency_ms": 122.27324823932443,
+      "error_rate": 0.0069764186739734516,
+      "replicas": 2,
+      "fault": null
+    },
+    {
+      "service": "user-service",
+      "cpu": 0.30861543085911397,
+      "memory": 0.33024364011661,
+      "latency_ms": 363.60604996264146,
+      "error_rate": 0.16945693572182624,
+      "replicas": 1,
+      "fault": "timeout"
+    },
+    {
+      "service": "payment-service",
+      "cpu": 0.2926900080563462,
+      "memory": 0.3113947571481499,
+      "latency_ms": 354.47046038607334,
+      "error_rate": 0.21509324696922102,
+      "replicas": 1,
+      "fault": "auth_denied"
+    },
+    {
+      "service": "db",
+      "cpu": 0.31355354720532863,
+      "memory": 0.3146440965496945,
+      "latency_ms": 137.49792790628757,
+      "error_rate": 0.03111495244812479,
+      "replicas": 1,
+      "fault": null
+    }
+  ]
+}

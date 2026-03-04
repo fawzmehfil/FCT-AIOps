@@ -1,0 +1,23 @@
+mode: simulate
+
+run:
+  ticks: 60
+  tick_seconds: 0.5
+  warmup_ticks: 20
+
+services:
+  - frontend
+  - user-service
+  - payment-service
+  - db
+
+anomaly:
+  contamination: 0.03
+  random_seed: 42
+
+remediation:
+  auto: true
+  safe_mode: true
+  max_actions_per_incident: 2
+
+artifacts_dir: artifacts

@@ -1,0 +1,42 @@
+{
+  "tick": 26,
+  "note": "incident",
+  "metrics": [
+    {
+      "service": "frontend",
+      "cpu": 0.3009571771482992,
+      "memory": 0.33127303491326526,
+      "latency_ms": 142.85901177703454,
+      "error_rate": 0.007497409121553743,
+      "replicas": 2,
+      "fault": null
+    },
+    {
+      "service": "user-service",
+      "cpu": 0.3321938851069895,
+      "memory": 0.36820142294112007,
+      "latency_ms": 411.21813136932576,
+      "error_rate": 0.20378333514662653,
+      "replicas": 1,
+      "fault": "conn_refused"
+    },
+    {
+      "service": "payment-service",
+      "cpu": 0.3487803574834357,
+      "memory": 0.3639209034756922,
+      "latency_ms": 416.0102896740827,
+      "error_rate": 0.21067628340047928,
+      "replicas": 1,
+      "fault": "conn_refused"
+    },
+    {
+      "service": "db",
+      "cpu": 0.3451094226423459,
+      "memory": 0.366404210539724,
+      "latency_ms": 155.01046787288308,
+      "error_rate": 0.02144230842061727,
+      "replicas": 1,
+      "fault": null
+    }
+  ]
+}

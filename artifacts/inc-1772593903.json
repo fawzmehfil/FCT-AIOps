@@ -1,0 +1,99 @@
+{
+  "id": "inc-1772593903",
+  "started_at": 1772593903.5840151,
+  "status": "ESCALATED",
+  "signature": "payment-service:auth",
+  "timeline": [
+    {
+      "tick": 38,
+      "service": "payment-service",
+      "rca": "Anomaly detected.\nSuspected service: payment-service\nMetrics: cpu=0.15, mem=0.21, latency_ms=293.5, error_rate=0.22\nLog signals: auth\nTrace errors: ['payment-service -> db: unauthorized']\nRoot-cause hypothesis: Likely auth/secret/config issue to a dependency.",
+      "actions": [
+        {
+          "ok": true,
+          "tool": "create_ticket",
+          "severity": "high",
+          "summary": "Auth issue suspected in payment-service",
+          "message": "Ticket created: severity=high, summary=Auth issue suspected in payment-service",
+          "ts": 1772593903.5859609
+        }
+      ],
+      "metrics_before": [
+        {
+          "service": "frontend",
+          "cpu": 0.12239425839417983,
+          "memory": 0.21253483707220738,
+          "latency_ms": 69.88759185974475,
+          "error_rate": 0.00832145575853535,
+          "replicas": 2,
+          "fault": null
+        },
+        {
+          "service": "user-service",
+          "cpu": 0.1494030710666026,
+          "memory": 0.2171279891532562,
+          "latency_ms": 89.55309646015276,
+          "error_rate": 0.012995278932146082,
+          "replicas": 1,
+          "fault": null
+        },
+        {
+          "service": "payment-service",
+          "cpu": 0.14579320142943064,
+          "memory": 0.20763324639392805,
+          "latency_ms": 293.52356994437287,
+          "error_rate": 0.21656343307874953,
+          "replicas": 1,
+          "fault": "auth_denied"
+        },
+        {
+          "service": "db",
+          "cpu": 0.17645282895369166,
+          "memory": 0.20690695068530066,
+          "latency_ms": 90.73087555073967,
+          "error_rate": 0.00892511879555493,
+          "replicas": 1,
+          "fault": null
+        }
+      ],
+      "metrics_after": [
+        {
+          "service": "frontend",
+          "cpu": 0.16088462122394023,
+          "memory": 0.24467744822640838,
+          "latency_ms": 80.43331010580312,
+          "error_rate": 0.0,
+          "replicas": 2,
+          "fault": null
+        },
+        {
+          "service": "user-service",
+          "cpu": 0.1912729312854611,
+          "memory": 0.26148097293988015,
+          "latency_ms": 99.42029307378344,
+          "error_rate": 0.016167573534163704,
+          "replicas": 1,
+          "fault": null
+        },
+        {
+          "service": "payment-service",
+          "cpu": 0.21786674842569148,
+          "memory": 0.24897999932686224,
+          "latency_ms": 312.1886638209124,
+          "error_rate": 0.21414059990356804,
+          "replicas": 1,
+          "fault": "auth_denied"
+        },
+        {
+          "service": "db",
+          "cpu": 0.1858452814902024,
+          "memory": 0.2371447582336041,
+          "latency_ms": 106.46565501488,
+          "error_rate": 0.018383823330481778,
+          "replicas": 1,
+          "fault": null
+        }
+      ]
+    }
+  ]
+}
