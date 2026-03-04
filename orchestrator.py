@@ -113,7 +113,7 @@ class Orchestrator:
                 "signature": signature,
                 "timeline": [],
             }
-            console.print(Panel.fit(f"🚨 Incident started: {self.active_incident['id']}", style="red"))
+            console.print(Panel.fit(f"Incident started: {self.active_incident['id']}", style="red"))
 
         console.print(Panel(decision.rca, title="RCA", style="yellow"))
 

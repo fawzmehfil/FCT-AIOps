@@ -2,7 +2,7 @@
 
 ## Demo
 
-See `demo.mp4` in this repository for a short walkthrough of the project and a live demonstration of the agent running.
+See `Demo.mp4` in this repository for a short walkthrough of the project and a live demonstration of the agent running.
 
 ## Overview
 
